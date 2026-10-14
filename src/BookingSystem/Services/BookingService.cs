@@ -80,7 +80,7 @@ public class BookingService(IBookingRepository repository)
             !existing.IsCancelled &&
             existing.Date == booking.Date &&
             existing.RoomName.Equals(booking.RoomName, StringComparison.OrdinalIgnoreCase) &&
-            booking.StartTime >= existing.StartTime &&
+            booking.EndTime > existing.StartTime &&
             booking.StartTime < existing.EndTime);
 
         if (hasOverlap)
