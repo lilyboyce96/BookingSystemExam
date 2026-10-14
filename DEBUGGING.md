@@ -31,7 +31,7 @@ Jag ändrade villkoret i BookingService.cs så att programmet jämför både sta
 
 ### Hur kontrollerade du att ändringen fungerade?
 
-Efter att jag hade ändrat koden körde jag testerna i Test Explorer. Två tester som tidigare hade misslyckats blev gröna.
+Efter att jag hade ändrat koden körde jag testerna i Test Explorer. Jag kontrollerade att alla fyra testfallen för överlappande bokningar blev godkända. Innan ändringen misslyckades två av dessa testfall. Efter rättningen kunde programmet hantera de olika tidsintervallen korrekt. Jag körde sedan alla tester igen och fick totalt 12 av 14 godkända tester. De två tester som fortfarande misslyckades gällde avbokningsfunktionen och inte överlappande bokningar.
 
 ### Vilket automatiserat test skyddar mot att felet återkommer?
 
